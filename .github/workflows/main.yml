@@ -20,4 +20,4 @@ jobs:
           aws-region: us-east-1
 
       - name: Deploy Static Site to S3 Bucket
-        run: aws s3 sync . elasticbeanstalk-us-east-1-543991822877 --delete
+        run: aws s3 sync . s3://elasticbeanstalk-us-east-1-543991822877 --delete
